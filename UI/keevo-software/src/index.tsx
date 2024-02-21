@@ -4,7 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'react-quill/dist/quill.snow.css';
+import 'bootstrap-social/bootstrap-social.css';
+import 'bootstrap-daterangepicker/daterangepicker.css';
+
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 root.render(
   <React.StrictMode>
     <App />

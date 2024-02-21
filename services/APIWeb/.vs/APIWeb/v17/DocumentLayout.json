@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\models\\tarefadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\models\\tarefadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TarefaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Models\\TarefaDTO.cs",
+              "RelativeDocumentMoniker": "APIWeb\\Models\\TarefaDTO.cs",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Models\\TarefaDTO.cs",
+              "RelativeToolTip": "APIWeb\\Models\\TarefaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T20:33:29.792Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

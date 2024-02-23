@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\repository\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\repository\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\controllers\\tarefacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\repository\\repository\\tarefarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\repository\\repository\\tarefarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\data\\map\\tarefamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\data\\map\\tarefamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\repository\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\repository\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\data\\map\\tarefamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\data\\map\\tarefamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "APIWeb\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "APIWeb\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAARAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAkwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T19:35:32.827Z",
               "IsPinned": true,
@@ -45,19 +57,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "APIWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\appsettings.json",
+              "RelativeToolTip": "APIWeb\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-23T01:17:02.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Program.cs",
+              "RelativeDocumentMoniker": "APIWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Program.cs",
+              "RelativeToolTip": "APIWeb\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T01:09:39.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TarefaController.cs",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\TarefaController.cs",
+              "RelativeDocumentMoniker": "APIWeb\\Controllers\\TarefaController.cs",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\TarefaController.cs",
+              "RelativeToolTip": "APIWeb\\Controllers\\TarefaController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T00:40:37.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TarefaRepository.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Repository\\Repository\\TarefaRepository.cs",
               "RelativeDocumentMoniker": "APIWeb\\Repository\\Repository\\TarefaRepository.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Repository\\Repository\\TarefaRepository.cs",
               "RelativeToolTip": "APIWeb\\Repository\\Repository\\TarefaRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAQAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T20:34:04.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TarefaMap.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Data\\Map\\TarefaMap.cs",
               "RelativeDocumentMoniker": "APIWeb\\Data\\Map\\TarefaMap.cs",
@@ -65,18 +116,17 @@
               "RelativeToolTip": "APIWeb\\Data\\Map\\TarefaMap.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T20:23:41.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-22T20:23:41.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Repository\\Repository\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "APIWeb\\Repository\\Repository\\UsuarioRepository.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Repository\\Repository\\UsuarioRepository.cs",
               "RelativeToolTip": "APIWeb\\Repository\\Repository\\UsuarioRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T20:35:04.524Z",
               "EditorCaption": ""

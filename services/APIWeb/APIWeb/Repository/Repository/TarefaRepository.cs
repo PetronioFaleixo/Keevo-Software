@@ -14,7 +14,8 @@ namespace APIWeb.Repository.Repository
         }
         public async Task<List<TarefaDTO>> Listar()
         {
-            return await _context.Tarefas.ToListAsync();
+           var retorno = await _context.Tarefas.ToListAsync();
+            return retorno;
         }
 
         public async Task<TarefaDTO> Buscar(long id)

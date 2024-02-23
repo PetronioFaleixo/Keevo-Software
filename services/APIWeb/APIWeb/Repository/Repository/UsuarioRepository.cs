@@ -12,19 +12,17 @@ namespace APIWeb.Repository.Repository
         {
             _context = context;
         }
-        public async Task<List<UsuarioDTO>> Listar()
+        public async Task<List<UsuarioModel>> Listar()
         {
             return await _context.Usuarios.ToListAsync();
         }
 
-        public async Task<UsuarioDTO> Buscar(long id)
+        public async Task<UsuarioModel> Buscar(long id)
         {
-            return await _context.Usuarios
-                //.Include(x => x.Tarefas)
-                .FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task Salvar(UsuarioDTO usuario)
+        public async Task Salvar(UsuarioModel usuario)
         {
             if (usuario.Id != 0)
             {

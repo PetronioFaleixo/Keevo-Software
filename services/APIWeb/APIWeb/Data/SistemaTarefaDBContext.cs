@@ -8,8 +8,8 @@ namespace APIWeb.Data
     {
         public SistemaTarefaDBContext(DbContextOptions<SistemaTarefaDBContext> options) : base(options) { }
 
-        public DbSet<UsuarioDTO> Usuarios { get; set; }
-        public DbSet<TarefaDTO> Tarefas { get; set; }
+        public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<TarefaModel> Tarefas { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

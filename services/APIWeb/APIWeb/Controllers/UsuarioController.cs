@@ -28,7 +28,7 @@ namespace APIWeb.Controllers
         }
 
         [HttpPost]
-        public async Task Salvar(UsuarioDTO dto)
+        public async Task Salvar(UsuarioModel dto)
         {
              await _repository.Salvar(dto);
         }

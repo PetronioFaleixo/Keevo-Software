@@ -1,12 +1,12 @@
 ﻿namespace APIWeb.Models
 {
-    public class TarefaDTO
+    public class TarefaModel
     {
         public long Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public long? Status { get; set; }
-        //public long? UsuarioId { get; set; }
-        //public UsuarioDTO Usuario { get; set; } = new UsuarioDTO();
+        public long? UsuarioId { get; set; }
+        public virtual UsuarioModel? Usuario { get; set; }
     }
 }

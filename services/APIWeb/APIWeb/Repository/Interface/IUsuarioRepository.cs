@@ -4,9 +4,9 @@ namespace APIWeb.Repository.Interface
 {
     public interface IUsuarioRepository
     {
-        Task<List<UsuarioDTO>> Listar();
-        Task<UsuarioDTO> Buscar(long id);
-        Task Salvar(UsuarioDTO usuario);
+        Task<List<UsuarioModel>> Listar();
+        Task<UsuarioModel> Buscar(long id);
+        Task Salvar(UsuarioModel usuario);
         Task Remove(long id);
     }
 }

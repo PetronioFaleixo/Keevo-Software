@@ -4,9 +4,9 @@ namespace APIWeb.Repository.Interface
 {
     public interface ITarefaRepository
     {
-        Task<List<TarefaDTO>> Listar();
-        Task<TarefaDTO> Buscar(long id);
-        Task Salvar(TarefaDTO usuario);
+        Task<List<TarefaModel>> Listar();
+        Task<TarefaModel> Buscar(long id);
+        Task Salvar(TarefaModel usuario);
         Task Remove(long id);
     }
 }

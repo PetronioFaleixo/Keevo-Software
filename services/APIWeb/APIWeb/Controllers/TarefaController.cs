@@ -27,7 +27,7 @@ namespace APIWeb.Controllers
         }
 
         [HttpPost]
-        public async Task Salvar(TarefaDTO dto)
+        public async Task Salvar(TarefaModel dto)
         {
             await _repository.Salvar(dto);
         }

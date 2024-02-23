@@ -57,7 +57,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "APIWeb.Models.TarefaDTO",
+        "Type": "APIWeb.Models.TarefaModel",
         "IsRequired": true
       }
     ],
@@ -127,7 +127,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "APIWeb.Models.UsuarioDTO",
+        "Type": "APIWeb.Models.UsuarioModel",
         "IsRequired": true
       }
     ],

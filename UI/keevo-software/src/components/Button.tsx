@@ -1,24 +1,24 @@
-import React from 'react';
-import { Button as ButtonReactStrap } from 'reactstrap';
-import { Icon } from './Icon';
+import React from "react";
+import { Button as ButtonReactStrap } from "reactstrap";
+import { Icon } from "./Icon";
 
 interface IButtonProps {
   id?: string;
   text?: string | JSX.Element;
   title?: string;
   type:
-    | 'new'
-    | 'edit'
-    | 'primary'
-    | 'secondary'
-    | 'success'
-    | 'info'
-    | 'warning'
-    | 'danger'
-    | 'link'
-    | 'inverse'
-    | 'none'
-    | 'white';
+    | "keevo"
+    | "edit"
+    | "primary"
+    | "secondary"
+    | "success"
+    | "info"
+    | "warning"
+    | "danger"
+    | "link"
+    | "inverse"
+    | "none"
+    | "white";
   classes?: string;
   disabled?: boolean;
   visible?: boolean;
@@ -44,10 +44,10 @@ export const Button: React.FC<IButtonProps> = ({
   const iconButton = iconCheck ? (
     <Icon name={iconCheck} removeMarginRigth={!text} />
   ) : (
-    ''
+    ""
   );
 
-  if (type === 'new') {
+  if (type === "keevo") {
     return (
       <ButtonReactStrap
         id={id}
@@ -55,10 +55,14 @@ export const Button: React.FC<IButtonProps> = ({
         onClick={eventOnClickButton}
         title={title}
         style={{
-          backgroundColor: '#870005',
-          color: '#FFF',
-          fontWeight: 'bold',
-          fontSize: '13px',
+          border: "1px solid #333",
+          backgroundColor: "#6414D2",
+          color: "#FFF",
+          fontWeight: "bold",
+          fontSize: "13px",
+          borderRadius: "8px",
+          padding: "10px 40px",
+          marginTop: "10px",
         }}
         hidden={!visible}
         disabled={disabled}
@@ -69,7 +73,7 @@ export const Button: React.FC<IButtonProps> = ({
     );
   }
 
-  if (type === 'white') {
+  if (type === "white") {
     return (
       <ButtonReactStrap
         id={id}
@@ -77,11 +81,14 @@ export const Button: React.FC<IButtonProps> = ({
         onClick={eventOnClickButton}
         title={title}
         style={{
-          backgroundColor: '#EEE',
-          border: '1px solid #333',
-          color: '#333',
-          fontWeight: 'bold',
-          fontSize: '13px',
+          backgroundColor: "#EEE",
+          border: "1px solid #333",
+          color: "#333",
+          fontWeight: "bold",
+          fontSize: "13px",
+          padding: "10px 40px",
+          marginTop: "10px",
+          borderRadius: "8px",
         }}
         hidden={!visible}
         disabled={disabled}

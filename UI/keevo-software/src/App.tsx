@@ -11,7 +11,7 @@ interface ITarefa {
   descricao: string;
   id: number;
   nome: string;
-  status: number;
+  statusId: number;
   usuarioId?: number;
   usuario: IUsuario;
 }
@@ -21,10 +21,16 @@ interface IUsuario {
   codigo: string;
   email: string;
 }
+interface IStatus {
+  id: number;
+  codigo: string;
+}
 const App: React.FC = () => {
   const [tarefas, setTarefas] = useState<ITarefa[]>([]);
   const [usuarios, setUsuarios] = useState<IUsuario[]>([]);
   const [usuario, setUsuario] = useState<any[]>([]);
+  const [statusModel, setStatusModel] = useState<IStatus[]>([]);
+  const [status, setStatus] = useState<any[]>([]);
   const [tarefaSelecionada, setTarefaSelecionada] = useState<ITarefa>(
     {} as ITarefa
   );
@@ -50,6 +56,20 @@ const App: React.FC = () => {
       })
     );
   };
+  const listarStatus = async function listarUsuarios() {
+    const dados: AxiosResponse<IStatus[]> = await axios.get(
+      "https://localhost:7067/api/Status/Listar"
+    );
+    setStatusModel(dados.data);
+    setStatus(
+      dados.data.map((x) => {
+        return {
+          id: x.id,
+          label: x.codigo,
+        };
+      })
+    );
+  };
   const handleSubmit = async (): Promise<void> => {
     try {
       //await getData();
@@ -57,6 +77,7 @@ const App: React.FC = () => {
   };
   useEffect(() => {
     listarUsuarios();
+    listarStatus();
   }, []);
   return (
     <>
@@ -117,7 +138,13 @@ const App: React.FC = () => {
               return usuarios.find((y) => y.id === x.usuarioId)?.nome || "";
             },
           },
-          { title: "Status", field: "status" },
+          {
+            title: "Status",
+            field: "statusId",
+            render: (x) => {
+              return statusModel.find((y) => y.id === x.statusId)?.codigo || "";
+            },
+          },
         ]}
         data={tarefas}
         selectionMode="single"

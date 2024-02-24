@@ -11,12 +11,11 @@ namespace APIWeb.Data.Map
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(200);
             builder.Property(x => x.Descricao).IsRequired().HasMaxLength(1000);
-            builder.Property(x => x.Status).IsRequired();
             builder.Property(x => x.UsuarioId);
-            builder.Property(x => x.StatusId);
+            builder.Property(x => x.StatusId).IsRequired();
 
             builder.HasOne(x => x.Usuario);
-            builder.HasOne(x => x.Status);
+            builder.HasOne(x => x.StatusModel);
             
                    
         }

@@ -8,6 +8,6 @@
         public long? UsuarioId { get; set; }
         public long StatusId { get; set; }
         public virtual UsuarioModel? Usuario { get; set; }
-        public virtual StatusModel Status { get; set; }
+        public virtual StatusModel? StatusModel { get; set; }
     }
 }

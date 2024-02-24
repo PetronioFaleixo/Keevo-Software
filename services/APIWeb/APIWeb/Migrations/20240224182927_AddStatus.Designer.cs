@@ -4,6 +4,7 @@ using APIWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APIWeb.Migrations
 {
     [DbContext(typeof(SistemaTarefaDBContext))]
-    partial class SistemaTarefaDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240224182927_AddStatus")]
+    partial class AddStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -61,7 +63,7 @@ namespace APIWeb.Migrations
                     b.Property<long>("StatusId")
                         .HasColumnType("bigint");
 
-                    b.Property<long?>("StatusModelId")
+                    b.Property<long>("StatusModelId")
                         .HasColumnType("bigint");
 
                     b.Property<long?>("UsuarioId")
@@ -108,7 +110,9 @@ namespace APIWeb.Migrations
                 {
                     b.HasOne("APIWeb.Models.StatusModel", "StatusModel")
                         .WithMany()
-                        .HasForeignKey("StatusModelId");
+                        .HasForeignKey("StatusModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("APIWeb.Models.UsuarioModel", "Usuario")
                         .WithMany()

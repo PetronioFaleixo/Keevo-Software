@@ -86,9 +86,6 @@ export const Button: React.FC<IButtonProps> = ({
           color: "#333",
           fontWeight: "bold",
           fontSize: "13px",
-          padding: "10px 40px",
-          marginTop: "10px",
-          borderRadius: "8px",
         }}
         hidden={!visible}
         disabled={disabled}

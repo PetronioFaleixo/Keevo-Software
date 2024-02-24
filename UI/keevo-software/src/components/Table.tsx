@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from 'react';
-import TablePagination from './TablePagination';
-import { Button } from './Button';
+import React, { useEffect, useState } from "react";
+import TablePagination from "./TablePagination";
+import { Button } from "./Button";
 
 interface ITableProps<T = any> {
   search?: boolean;
   rowsPerPage?: number;
-  selectionMode?: 'none' | 'single' | 'multiple';
+  selectionMode?: "none" | "single" | "multiple";
   columns: ITableColumnProps<T>[];
   data: T[];
   onSelectionChange?: (selecteds: T[]) => void;
@@ -32,7 +32,7 @@ export interface ITableColumnProps<T = any> {
   cellStyle?:
     | React.CSSProperties
     | ((data: T[], rowData: T) => React.CSSProperties);
-  render?: (data: T, type: 'row' | 'group') => any;
+  render?: (data: T, type: "row" | "group") => any;
 }
 
 export const Table: React.FC<ITableProps> = ({
@@ -40,7 +40,7 @@ export const Table: React.FC<ITableProps> = ({
   data,
   search = true,
   rowsPerPage = 5,
-  selectionMode = 'none',
+  selectionMode = "none",
   onSelectionChange,
   onDoubleClick,
   selectAll,
@@ -53,22 +53,22 @@ export const Table: React.FC<ITableProps> = ({
   const [selecionados, setSelecionados] = useState<any[]>([]);
   const [dados, setDados] = useState<any[]>([]);
   const obterValorObjeto = (row: any, field: string): string => {
-    const properties = field.split('.');
+    const properties = field.split(".");
     let retorno: any = row;
-    properties.forEach(p => {
+    properties.forEach((p) => {
       retorno = retorno[p];
     });
 
     if (retorno === 0) {
-      return '0 ';
+      return "0 ";
     }
     return retorno as string;
   };
   const searchValue = (propertyValue: string, array: any[]): any[] => {
     const newArray: any[] = [];
     if (propertyValue) {
-      array.forEach(x => {
-        const existe = columns.some(p => {
+      array.forEach((x) => {
+        const existe = columns.some((p) => {
           return (
             obterValorObjeto(x, p.field) &&
             obterValorObjeto(x, p.field)
@@ -94,7 +94,7 @@ export const Table: React.FC<ITableProps> = ({
   }, [data]);
 
   useEffect(() => {
-    if (selectionMode !== 'none' && onSelectionChange) {
+    if (selectionMode !== "none" && onSelectionChange) {
       onSelectionChange(selecionados);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -107,18 +107,18 @@ export const Table: React.FC<ITableProps> = ({
   }, [defaultSelected]);
   return (
     <>
-      <div style={{ float: 'right' }}>
+      <div style={{ float: "right" }}>
         {selectAll && dados.length > 0 && (
           <Button
             type="white"
             text={
               selecionados.length < dados.length
-                ? 'Selecionar Todos'
-                : 'Remover Todos'
+                ? "Selecionar Todos"
+                : "Remover Todos"
             }
             classes="w-auto m-r-20"
             iconCheck={
-              selecionados.length < dados.length ? 'fa-check' : 'fa-times'
+              selecionados.length < dados.length ? "fa-check" : "fa-times"
             }
             eventOnClickButton={() => {
               setSelecionados(selecionados.length < dados.length ? dados : []);
@@ -129,8 +129,8 @@ export const Table: React.FC<ITableProps> = ({
           <input
             className="form-control form-control-sm"
             placeholder="Pesquisar..."
-            style={{ width: 'auto', margin: '7px 0', display: 'inline' }}
-            onChange={e => {
+            style={{ width: "auto", margin: "7px 0", display: "inline" }}
+            onChange={(e) => {
               if (e.target.value) {
                 setDados(searchValue(e.target.value, data));
               } else {
@@ -140,44 +140,44 @@ export const Table: React.FC<ITableProps> = ({
           />
         )}
       </div>
-      <div style={{ overflowY: 'auto', clear: 'both', marginTop: '5px' }}>
-        <table id={id} className="table table-bordered table-hover">
-          <thead style={{ background: '#EFEFEF' }}>
+      <div style={{ overflowY: "auto", clear: "both", marginTop: "5px" }}>
+        <table id={id} className="table-bordered table-hover">
+          <thead style={{ background: "#EFEFEF" }}>
             <tr>
-              {columns.map(x => {
-                return <th style={{ width: x.width || 'auto' }}>{x.title}</th>;
+              {columns.map((x) => {
+                return <th style={{ width: x.width || "auto" }}>{x.title}</th>;
               })}
             </tr>
           </thead>
 
           {!!dados.length && (
-            <tbody style={{ whiteSpace: 'nowrap' }}>
+            <tbody style={{ whiteSpace: "nowrap" }}>
               {dados
                 .slice(
                   totalRegistros || currentPage === 1
                     ? 0
                     : rowsPerPage * (currentPage - 1),
-                  rowsPerPage * currentPage,
+                  rowsPerPage * currentPage
                 )
-                .map(row => {
+                .map((row) => {
                   return (
                     <tr
                       style={{
-                        background: selecionados.find(i => i === row)
-                          ? '#CCC'
-                          : 'none',
+                        background: selecionados.find((i) => i === row)
+                          ? "#CCC"
+                          : "none",
                         cursor:
-                          selectionMode !== 'none' ? 'pointer' : 'default',
+                          selectionMode !== "none" ? "pointer" : "default",
                       }}
                       onClick={() => {
-                        if (selectionMode !== 'none') {
-                          if (selectionMode === 'single') {
+                        if (selectionMode !== "none") {
+                          if (selectionMode === "single") {
                             if (selecionados.length && selecionados[0] === row)
                               setSelecionados([]);
                             else setSelecionados([row]);
-                          } else if (selecionados.find(i => i === row))
+                          } else if (selecionados.find((i) => i === row))
                             setSelecionados([
-                              ...selecionados.filter(s => s !== row),
+                              ...selecionados.filter((s) => s !== row),
                             ]);
                           else setSelecionados([...selecionados, row]);
                         }
@@ -189,12 +189,12 @@ export const Table: React.FC<ITableProps> = ({
                         }
                       }}
                     >
-                      {columns.map(c => {
+                      {columns.map((c) => {
                         return (
                           <td>
                             {/* eslint-disable-next-line no-nested-ternary */}
                             {c.render
-                              ? c.render(row, 'row')
+                              ? c.render(row, "row")
                               : obterValorObjeto(row, c.field)}
                           </td>
                         );
@@ -217,7 +217,7 @@ export const Table: React.FC<ITableProps> = ({
           <TablePagination
             paginaAtual={currentPage}
             totalPaginas={Math.ceil(
-              (totalRegistros || dados.length) / rowsPerPage,
+              (totalRegistros || dados.length) / rowsPerPage
             )}
             onPageChange={(paginaAtual: number): void => {
               setCurrentPage(paginaAtual);

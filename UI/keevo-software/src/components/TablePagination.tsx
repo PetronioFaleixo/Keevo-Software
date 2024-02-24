@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button } from './Button';
+import React from "react";
+import { Button } from "./Button";
 
 export interface ITablePagination {
   paginaAtual: number;
@@ -13,14 +13,16 @@ const TablePagination: React.FC<ITablePagination> = ({
   onPageChange,
 }) => {
   return (
-    <div style={{ textAlign: 'right', paddingBottom: '10px' }}>
+    <div style={{ textAlign: "right", paddingBottom: "10px" }}>
       <span>
         Página {paginaAtual} de {totalPaginas}
       </span>
       <Button
         disabled={paginaAtual === 1}
-        text="Anterior"
+        text=""
         type="secondary"
+        iconCheck="fa-chevron-left"
+        style={{ marginLeft: "5px", marginRigth: "10px" }}
         classes="m-l-10 m-r-10 w-auto btn-sm"
         eventOnClickButton={() => {
           onPageChange(paginaAtual - 1);
@@ -28,8 +30,10 @@ const TablePagination: React.FC<ITablePagination> = ({
       />
       <Button
         disabled={paginaAtual >= totalPaginas}
-        text="Próxima"
+        text=""
         type="secondary"
+        iconCheck="fa-chevron-right"
+        style={{ marginLeft: "5px", marginRigth: "10px" }}
         classes="m-l-5 m-r-10 w-auto btn-sm"
         eventOnClickButton={() => {
           onPageChange(paginaAtual + 1);

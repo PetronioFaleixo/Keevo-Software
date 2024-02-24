@@ -18,6 +18,7 @@ builder.Services.AddEntityFrameworkSqlServer()
 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ITarefaRepository, TarefaRepository>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
 
 // Habilitando CORS
 builder.Services.AddCors(options =>

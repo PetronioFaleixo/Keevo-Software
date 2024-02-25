@@ -5,7 +5,7 @@ import axios, { AxiosResponse } from "axios";
 import { BodyModal, FooterModal, HeaderModal, Modal } from "./components/Modal";
 import { PageTitle } from "./components/PageTitle";
 import { Col, Input, Row } from "reactstrap";
-import { IOptionsProps, Select } from "./components/Select";
+import { Select } from "./components/Select";
 
 interface ITarefa {
   descricao: string;
@@ -70,10 +70,33 @@ const App: React.FC = () => {
       })
     );
   };
+  const excluir = async function listarUsuarios() {
+    try {
+      await axios.delete("https://localhost:7067/api/Tarefa/Remove", {
+        params: {
+          id: tarefaSelecionada.id,
+        },
+      });
+      listarTarefas();
+      alert("Tarefa excluida com sucesso!");
+    } catch (ex) {
+      debugger;
+      alert("Erro ao Excluir");
+    }
+  };
   const handleSubmit = async (): Promise<void> => {
     try {
-      //await getData();
-    } catch (ex) {}
+      debugger;
+      await axios.post<ITarefa>(
+        "https://localhost:7067/api/Tarefa/Salvar",
+        tarefaSelecionada
+      );
+      alert("Tarefa salva com sucesso!");
+      listarTarefas();
+    } catch (ex) {
+      debugger;
+      alert("Erro ao salvar");
+    }
   };
   useEffect(() => {
     listarUsuarios();
@@ -91,6 +114,7 @@ const App: React.FC = () => {
                 text="Novo"
                 iconCheck="fa-plus"
                 eventOnClickButton={() => {
+                  setTarefaSelecionada({} as ITarefa);
                   setModalOpen(!modalOpen);
                 }}
               />
@@ -100,6 +124,7 @@ const App: React.FC = () => {
                 type={"keevo"}
                 text="Editar"
                 iconCheck="fa-edit"
+                disabled={!tarefaSelecionada.id}
                 eventOnClickButton={() => {
                   setModalOpen(!modalOpen);
                 }}
@@ -109,9 +134,10 @@ const App: React.FC = () => {
               <Button
                 type={"keevo"}
                 text="Excluir"
+                disabled={!tarefaSelecionada.id}
                 iconCheck="fa-trash"
                 eventOnClickButton={() => {
-                  setModalOpen(!modalOpen);
+                  excluir();
                 }}
               />
             </Col>
@@ -177,25 +203,43 @@ const App: React.FC = () => {
                       nome: e.target.value,
                     })
                   }
+                  maxLength={200}
                   placeholder="Nome:"
                 />
               </Col>
               <Col md="4">
                 <Select
-                  id={""}
-                  name={""}
+                  id={"selectUsuario"}
+                  name={"selectUsuario"}
+                  value={tarefaSelecionada.usuarioId || []}
                   options={[
-                    { label: "Selecione um usuario", id: 1, selected: true },
+                    { label: "Selecione um usuario", id: -1, selected: true },
+                    ...usuario,
                   ]}
+                  onChange={(e) => {
+                    setTarefaSelecionada({
+                      ...tarefaSelecionada,
+                      usuarioId: e.target.value as unknown as number,
+                    });
+                  }}
                 />
               </Col>
               <Col md="4">
                 <Select
-                  id={""}
-                  name={""}
+                  id={"selectStatus"}
+                  name={"selectStatus"}
+                  value={tarefaSelecionada.statusId || []}
                   options={[
-                    { label: "Selecione um status", id: 1, selected: true },
+                    { label: "Selecione um status", id: -1, selected: true },
+                    ...status,
                   ]}
+                  onChange={(e) => {
+                    debugger;
+                    setTarefaSelecionada({
+                      ...tarefaSelecionada,
+                      statusId: e.target.value as unknown as number,
+                    });
+                  }}
                 />
               </Col>
               <textarea
@@ -226,6 +270,7 @@ const App: React.FC = () => {
               eventOnClickButton={() => setModalOpen(!modalOpen)}
               iconCheck="fa-close"
             />
+
             <Button
               type="secondary"
               text="Salvar"

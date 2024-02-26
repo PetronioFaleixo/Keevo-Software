@@ -12,7 +12,7 @@ namespace APIWeb.Service.Service
             _repository = repository;
         }
 
-        public async Task<List<TarefaModel>> Listar(long? status = null, long? usuario = null)
+        public async Task<List<TarefaModel>> Listar(long? status, long? usuario)
         {
             var retorno = await _repository.Listar();
 
@@ -20,21 +20,7 @@ namespace APIWeb.Service.Service
             {
                 throw new Exception("Não há Tarefas para serem listadas");
             }
-
-            if (status != null && usuario != null)
-            {
-                return retorno.Where(x => x.UsuarioId == usuario && x.StatusId == status).ToList();
-            }
-            else if (status != null)
-            {
-                return retorno.Where(x => x.StatusId == status).ToList();
-            }
-            else if (usuario != null)
-            {
-                return retorno.Where(x => x.UsuarioId == usuario).ToList();
-            }
-
-            return retorno;
+            return retorno.Where(x => (usuario == null || x.UsuarioId == usuario) && (status == null || x.StatusId == status)).ToList();
         }
     }
 }

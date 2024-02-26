@@ -13,6 +13,7 @@ Este é um projeto de Lista de Tarefas onde os usuários podem criar, editar ou 
 - **Frontend:**
   - Biblioteca: React.js
   - Linguagem: TypeScript
+  - Biblioteca de UI: Bootstrap e Reactstrap
 
 ## Funcionalidades
 
@@ -39,19 +40,19 @@ Este é um projeto de Lista de Tarefas onde os usuários podem criar, editar ou 
 1. **Backend/API:**
     - Clone este repositório.
     - Certifique-se de ter o .NET instalado em sua máquina.
+    - Execute as migrações do Entity Framework para criar o banco de dados: `dotnet ef database update`.
     - Navegue até o diretório `services/APIWeb` e execute `dotnet run` para iniciar o servidor.
+    - Certifique-se de que todas as dependências foram instaladas corretamente antes de iniciar o servidor.
 
 2. **Frontend:**
     - Clone este repositório, se ainda não o fez.
     - Certifique-se de ter o Node.js e o npm instalados.
     - Navegue até o diretório `UI/keevo-software` e execute `npm install` para instalar as dependências.
     - Após a instalação, execute `npm start` para iniciar o servidor de desenvolvimento do React.
+    - Verifique se a aplicação está sendo executada corretamente acessando-a em um navegador web.
 
 3. **Banco de Dados:**
     - Certifique-se de ter o SQL Server instalado.
-    - Execute os scripts de criação do banco de dados e das tabelas disponíveis no diretório `database`.
+    - Configure a conexão com o banco de dados SQL Server no arquivo `appsettings.json`.
 
-## Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue caso encontre algum problema ou enviar um pull request com melhorias.
 

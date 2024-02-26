@@ -1,6 +1,8 @@
 using APIWeb.Data;
 using APIWeb.Repository.Interface;
 using APIWeb.Repository.Repository;
+using APIWeb.Service.Interface;
+using APIWeb.Service.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +21,7 @@ builder.Services.AddEntityFrameworkSqlServer()
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ITarefaRepository, TarefaRepository>();
 builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<ITarefaService, TarefaService>();
 
 // Habilitando CORS
 builder.Services.AddCors(options =>

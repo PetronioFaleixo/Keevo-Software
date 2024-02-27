@@ -1,5 +1,8 @@
-import React from "react";
-import { Col } from "reactstrap";
+import React, { useState } from "react";
+import { Col, Modal, Row } from "reactstrap";
+import { Button } from "./Button";
+import { BodyModal, FooterModal, HeaderModal } from "./Modal";
+import { IOptionsProps, Select } from "./Select";
 
 interface IPageTitle {
   title: string;
@@ -8,6 +11,13 @@ interface IPageTitle {
 }
 
 export const PageTitle: React.FC<IPageTitle> = ({ title, md }) => {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const menu: IOptionsProps[] = [
+    { label: "Selecione", id: undefined, selected: true },
+    { label: "Tarefa", id: 1, selected: true },
+    { label: "Status", id: 2, selected: true },
+    { label: "Usuário", id: 3, selected: true },
+  ];
   return (
     <Col
       md={md}
@@ -17,11 +27,54 @@ export const PageTitle: React.FC<IPageTitle> = ({ title, md }) => {
         fontSize: "24px",
         fontFamily: "inherit",
         fontWeight: "500",
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      <h1>
+      <Button
+        type="keevo"
+        iconCheck="fa-bars"
+        text="Menu"
+        style={{ height: "auto", width: "100px", margin: "10px" }}
+        eventOnClickButton={() => setModalOpen(true)}
+      />
+      <h1 style={{ marginLeft: "10px" }}>
         <strong>{title}</strong>
       </h1>
+      <Modal isOpen={modalOpen} className="modal-sm">
+        <HeaderModal
+          toggle={() => {
+            setModalOpen(!modalOpen);
+          }}
+        >
+          Menu
+        </HeaderModal>
+        <BodyModal>
+          <Row>
+            <Select
+              id={"selectMenu"}
+              name={"selectMenu"}
+              options={menu}
+              onChange={({ target }) => {
+                target.value === "1" &&
+                  (window.location.href = "http://localhost:3000/tarefa");
+                target.value === "2" &&
+                  (window.location.href = "http://localhost:3000/status");
+                target.value === "3" &&
+                  (window.location.href = "http://localhost:3000/usuario");
+              }}
+            />
+          </Row>
+        </BodyModal>
+        <FooterModal>
+          <Button
+            type="white"
+            text="Fechar"
+            eventOnClickButton={() => setModalOpen(!modalOpen)}
+            iconCheck="fa-close"
+          />
+        </FooterModal>
+      </Modal>
     </Col>
   );
 };

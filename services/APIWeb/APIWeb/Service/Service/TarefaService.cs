@@ -18,6 +18,7 @@ namespace APIWeb.Service.Service
 
             if (retorno == null || retorno.Count == 0)
             {
+                return null;
                 throw new Exception("Não há Tarefas para serem listadas");
             }
             return retorno.Where(x => (usuario == null || x.UsuarioId == usuario) && (status == null || x.StatusId == status)).ToList();

@@ -55,8 +55,8 @@ const TarefaPage: React.FC = () => {
         },
       }
     );
-    setTarefas(dados.data);
-    console.log(dados.data);
+    if (dados.data.length) setTarefas(dados.data);
+    else alert("Não a dados para serem exibidos");
   };
   const listarUsuarios = async function listarUsuarios() {
     const dados: AxiosResponse<IUsuario[]> = await axios.get(
@@ -76,6 +76,7 @@ const TarefaPage: React.FC = () => {
     const dados: AxiosResponse<IStatus[]> = await axios.get(
       "https://localhost:7067/api/Status/Listar"
     );
+
     setStatusModel(dados.data);
     setStatus(
       dados.data.map((x) => {
@@ -118,8 +119,8 @@ const TarefaPage: React.FC = () => {
   return (
     <>
       <Row>
-        <PageTitle title={"Cadastro de Tarefa"} md={"7"}></PageTitle>
-        <Col md="5">
+        <PageTitle title={"Cadastro de Tarefa"} md={"8"}></PageTitle>
+        <Col md="4">
           <Row>
             <Col md="4">
               <Button
@@ -189,7 +190,7 @@ const TarefaPage: React.FC = () => {
             }}
           />
         </Col>
-        <Col md="3">
+        <Col md="3" style={{ marginTop: "20px" }}>
           <Button
             type={"keevo"}
             text="Filtrar"
@@ -222,7 +223,6 @@ const TarefaPage: React.FC = () => {
         data={tarefas}
         selectionMode="single"
         onSelectionChange={(e) => {
-          console.log(e);
           e.length > 0
             ? setTarefaSelecionada(e[0])
             : setTarefaSelecionada({} as ITarefa);

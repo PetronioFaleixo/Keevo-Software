@@ -25,8 +25,8 @@ const StatusPage: React.FC = () => {
     const dados: AxiosResponse<IStatus[]> = await axios.get(
       "https://localhost:7067/api/Status/Listar"
     );
-    setStatus(dados.data);
-    console.log(dados.data);
+    if (dados.data.length) setStatus(dados.data);
+    else alert("Não a dados para serem exibidos");
   };
   const excluir = async function listarUsuarios() {
     try {
@@ -57,8 +57,8 @@ const StatusPage: React.FC = () => {
   return (
     <>
       <Row>
-        <PageTitle title={"Cadastro de Status"} md={"6"}></PageTitle>
-        <Col md="6">
+        <PageTitle title={"Cadastro de Status"} md={"8"}></PageTitle>
+        <Col md="4">
           <Row>
             <Col md="3">
               <Button
@@ -116,7 +116,6 @@ const StatusPage: React.FC = () => {
         data={status}
         selectionMode="single"
         onSelectionChange={(e) => {
-          console.log(e);
           e.length > 0
             ? setStatusSelecionado(e[0])
             : setStatusSelecionado({} as IStatus);

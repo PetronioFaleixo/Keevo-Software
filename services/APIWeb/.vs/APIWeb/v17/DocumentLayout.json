@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\service\\service\\tarefaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\service\\interface\\itarefaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\service\\interface\\itarefaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9675D55-2550-4CC8-8BF0-E725B66B09F7}|APIWeb\\APIWeb.csproj|c:\\users\\petro\\onedrive\\documentos\\github\\keevo-software\\services\\apiweb\\apiweb\\repository\\interface\\itarefarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,7 +48,7 @@
               "RelativeDocumentMoniker": "APIWeb\\Controllers\\TarefaController.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\TarefaController.cs",
               "RelativeToolTip": "APIWeb\\Controllers\\TarefaController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAMAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T14:16:48.167Z",
               "IsPinned": true,
@@ -48,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ITarefaService.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Service\\Interface\\ITarefaService.cs",
               "RelativeDocumentMoniker": "APIWeb\\Service\\Interface\\ITarefaService.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Service\\Interface\\ITarefaService.cs",
               "RelativeToolTip": "APIWeb\\Service\\Interface\\ITarefaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T14:17:29.114Z",
               "IsPinned": true,
@@ -68,7 +76,7 @@
               "RelativeDocumentMoniker": "APIWeb\\Service\\Service\\TarefaService.cs",
               "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Service\\Service\\TarefaService.cs",
               "RelativeToolTip": "APIWeb\\Service\\Service\\TarefaService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAAMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T14:17:34.003Z",
               "IsPinned": true,
@@ -76,7 +84,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "APIWeb\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "APIWeb\\Controllers\\StatusController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wB4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:24:11.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240226232349_UpdateDataBase.cs",
+              "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs",
+              "RelativeDocumentMoniker": "APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs",
+              "ToolTip": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs",
+              "RelativeToolTip": "APIWeb\\Migrations\\20240226232349_UpdateDataBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:23:49.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Program.cs",
               "RelativeDocumentMoniker": "APIWeb\\Program.cs",
@@ -84,12 +118,11 @@
               "RelativeToolTip": "APIWeb\\Program.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAgwB0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T14:24:03.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T14:24:03.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ITarefaRepository.cs",
               "DocumentMoniker": "C:\\Users\\petro\\OneDrive\\Documentos\\GitHub\\Keevo-Software\\services\\APIWeb\\APIWeb\\Repository\\Interface\\ITarefaRepository.cs",
               "RelativeDocumentMoniker": "APIWeb\\Repository\\Interface\\ITarefaRepository.cs",
@@ -97,8 +130,7 @@
               "RelativeToolTip": "APIWeb\\Repository\\Interface\\ITarefaRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T14:18:54.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T14:18:54.793Z"
             }
           ]
         }
